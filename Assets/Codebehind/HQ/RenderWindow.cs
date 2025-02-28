@@ -1,8 +1,14 @@
-﻿using System;
+﻿using HQ;
+using System;
+using System.Runtime.ConstrainedExecution;
 using UnityEngine;
+using UnityEngine.Events;
+using static UnityEngine.GraphicsBuffer;
+
 
 public class RenderWindow
 {
+
 
     internal void draw(Mesh mesh, Material mat, Matrix4x4 fixAspect)
     {
@@ -35,9 +41,11 @@ public class RenderWindow
         //        s.rect.width / s.texture.width  * Source.width,
         //        s.rect.height / s.texture.height * Source.height)
         //    , 0, 0, 0, 0);
+
+      
         var sign = flip ? -1: 1;
 
-        Graphics.DrawTexture(
+       Graphics.DrawTexture(
             new Rect(
                 taret.x,
                 taret.y,
@@ -50,7 +58,32 @@ public class RenderWindow
                 sprite.rect.y / sprite.texture.height + (1 - offsetSource.height) * sprite.rect.height / sprite.texture.height,
                 sprite.rect.width / sprite.texture.width,
                 sprite.rect.height / sprite.texture.height * offsetSource.height)
-            , 0, 0, 0, 0);
+        , 0, 0, 0, 0);
+
+        
+       
 
     }
+
+
+    public static bool Intersecting(Rect a, Rect b)
+    {
+        return !(a.xMax < b.xMin || a.xMin > b.xMax || a.yMax < b.yMin || a.yMin > b.yMax);
+    }
+
+    private void DrawRect(Rect rect, Color color)
+    {
+        Vector3 bottomLeft = new Vector3(rect.xMin, rect.yMin, 0);
+        Vector3 bottomRight = new Vector3(rect.xMax, rect.yMin, 0);
+        Vector3 topLeft = new Vector3(rect.xMin, rect.yMax, 0);
+        Vector3 topRight = new Vector3(rect.xMax, rect.yMax, 0);
+
+        Debug.DrawLine(bottomLeft, bottomRight, color, 2f);
+        Debug.DrawLine(bottomRight, topRight, color, 2f);
+        Debug.DrawLine(topRight, topLeft, color, 2f);
+        Debug.DrawLine(topLeft, bottomLeft, color, 2f);
+    }
+
+
+
 }

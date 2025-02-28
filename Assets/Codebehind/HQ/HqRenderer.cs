@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
+using UnityEngine.Events;
+using Color = UnityEngine.Color;
 
 [ExecuteInEditMode]
 public class HqRenderer : MonoBehaviour
@@ -38,6 +41,9 @@ public class HqRenderer : MonoBehaviour
     public int rumbleWidth;
     public float SpriteScale;
 
+    [SerializeField] GameObject carObject;
+    [SerializeField] UnityEvent onColision;
+
     [NonSerialized]
     int screenWidth2;
     [NonSerialized]
@@ -74,6 +80,13 @@ public class HqRenderer : MonoBehaviour
     [NonSerialized]
     private Vector2 bgOffset;
 
+    ///////////////////////
+    //My changes         //
+    //////////////////////
+    Rect car;
+
+
+
     private void OnEnable()
     {
 #if UNITY_EDITOR
@@ -91,6 +104,22 @@ public class HqRenderer : MonoBehaviour
 
     void Awake()
     {
+      
+        car = new Rect(-2f, -7.5f, 4, 2.5f);
+
+        // Get the object's position and scale
+        Vector3 position = carObject.transform.position;
+        Vector3 scale = carObject.transform.lossyScale; // Global scale
+
+        // Assuming pivot is center, adjust to bottom-left origin
+        float width = scale.x;
+        float height = scale.y;
+        float x = position.x - width / 2;
+        float y = position.y - height / 2;
+
+        
+
+
         Renderer = new RenderWindow();
 
         Texture2D tex1 = new Texture2D(screenWidthRef, screenHeightRef, TextureFormat.RGBA32, false);
@@ -145,6 +174,19 @@ public class HqRenderer : MonoBehaviour
 
         destX += destW * Mathf.Sign(line.spriteX) / 2; //offsetX
         destY += destH * (-1);    //offsetY
+        
+
+        //My changes to try and detect collision
+        ////////////////////////////////////////////
+        Vector3 screenPos = new Vector3(destX, destY, targetCamera.nearClipPlane);
+        Vector3 worldPos = targetCamera.ScreenToWorldPoint(screenPos);
+        Rect worldRect = new Rect(worldPos.x - 5, worldPos.y, 1, 1);
+
+        Debug.DrawLine(new Vector3(car.xMin, car.yMin), new Vector3(car.xMax, car.yMin), Color.red, 5f);
+        Debug.DrawLine(new Vector3(car.xMax, car.yMin), new Vector3(car.xMax, car.yMax), Color.red, 5f);
+        Debug.DrawLine(new Vector3(car.xMax, car.yMax), new Vector3(car.xMin, car.yMax), Color.red, 5f);
+        Debug.DrawLine(new Vector3(car.xMin, car.yMax), new Vector3(car.xMin, car.yMin), Color.red, 5f);
+        ///////////////////////////////////////////
 
         float clipH = -line.Y + line.clip;
         if (clipH < 0) clipH = 0;
@@ -153,8 +195,24 @@ public class HqRenderer : MonoBehaviour
 
         Rect target = new Rect(destX, destY, destW, destH);
         Rect source = new Rect(Vector2Int.zero, new Vector2(1, 1 - clipH / destH));
+
+        //My change, checking for collision 
+        ///////////////////////////////////////////
+        if (Intersecting(worldRect, car))
+        {
+            Debug.Log("Collision Detected!");
+            Debug.Log($"Sprite {s.name} World Position: {worldPos}");
+            onColision.Invoke();
+            DrawRect(worldRect, Color.cyan);
+        }
+        ///////////////////////////////////////////
+        
         Renderer.draw(source, s, target, line.flipX);
+
     }
+
+  
+
     private void addQuad(Material c, float x1, float y1, float w1, float x2, float y2, float w2, float z)
     {
         dictionary[c].SetQuad(x1 / PPU, y1 / PPU, w1 / PPU, x2 / PPU, y2 / PPU, w2 / PPU, z);
@@ -176,6 +234,7 @@ public class HqRenderer : MonoBehaviour
             {
                 drawSprite(ref track.lines[n % track.Length]);
             }
+            //GL.
             Graphics.CopyTexture(_renderTexture, FG.sprite.texture);
             //Revert the matrix and active render texture.
             GL.PopMatrix();
@@ -271,6 +330,8 @@ public class HqRenderer : MonoBehaviour
         float x = 0, dx = 0;
         float res = 1f / PPU;
 
+
+
         foreach (var q in quad) { q.Clear(); }
         foreach (var m in combined) { m.Clear(); }
         ///////draw road////////
@@ -324,6 +385,30 @@ public class HqRenderer : MonoBehaviour
             }
 
             counter++;
+
+
         }
+    }
+
+    ///////////////////////////////////////////////////////
+    ///My methods 
+    //////////////////////////////////////////////////////
+
+    private void DrawRect(Rect rect, Color color)
+    {
+        Vector3 bottomLeft = new Vector3(rect.xMin, rect.yMin, 0);
+        Vector3 bottomRight = new Vector3(rect.xMax, rect.yMin, 0);
+        Vector3 topLeft = new Vector3(rect.xMin, rect.yMax, 0);
+        Vector3 topRight = new Vector3(rect.xMax, rect.yMax, 0);
+
+        Debug.DrawLine(bottomLeft, bottomRight, color, 2f);
+        Debug.DrawLine(bottomRight, topRight, color, 2f);
+        Debug.DrawLine(topRight, topLeft, color, 2f);
+        Debug.DrawLine(topLeft, bottomLeft, color, 2f);
+    }
+
+    public static bool Intersecting(Rect a, Rect b)
+    {
+        return !(a.xMax < b.xMin || a.xMin > b.xMax || a.yMax < b.yMin || a.yMin > b.yMax);
     }
 }
