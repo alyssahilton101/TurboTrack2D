@@ -16,6 +16,7 @@ public class TrackObject: ScriptableObject
     private void OnEnable()
     {
         Construct();
+       
     }
 
     protected virtual void Construct()

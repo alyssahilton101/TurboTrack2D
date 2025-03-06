@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|solutionrelative:assets\\codebehind\\hq\\hqrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\assets\\codebehind\\hq\\renderwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|solutionrelative:assets\\codebehind\\hq\\renderwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\assets\\codebehind\\hq\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|solutionrelative:assets\\codebehind\\hq\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\assets\\codebehind\\hq\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|solutionrelative:assets\\codebehind\\hq\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|c:\\users\\alyss\\unity projects\\turbotrack2d\\assets\\codebehind\\hq\\trackmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|solutionrelative:assets\\codebehind\\hq\\trackmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\assets\\codebehind\\hq\\projectedbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|solutionrelative:assets\\codebehind\\hq\\projectedbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|c:\\users\\alyss\\unity projects\\turbotrack2d\\assets\\codebehind\\hq\\trackobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|solutionrelative:assets\\codebehind\\hq\\trackobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\assets\\codebehind\\hq\\quad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|solutionrelative:assets\\codebehind\\hq\\quad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42CA35A3-3221-2573-2E84-9AFB2ECE8453}|Assembly-CSharp-Editor.csproj|c:\\users\\alyss\\unity projects\\turbotrack2d\\assets\\codebehind\\editor\\trackeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42CA35A3-3221-2573-2E84-9AFB2ECE8453}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\codebehind\\editor\\trackeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\assets\\codebehind\\hq\\renderwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F95DDDB0-FF14-2502-72EE-79ED8258AA16}|Assembly-CSharp.csproj|solutionrelative:assets\\codebehind\\hq\\renderwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,68 +34,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProjectedBody.cs",
-              "DocumentMoniker": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\ProjectedBody.cs",
-              "RelativeDocumentMoniker": "Assets\\Codebehind\\HQ\\ProjectedBody.cs",
-              "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\ProjectedBody.cs",
-              "RelativeToolTip": "Assets\\Codebehind\\HQ\\ProjectedBody.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBoAAAAAAAAAAAAAAA==",
+              "Title": "TrackEditor.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\Editor\\TrackEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Codebehind\\Editor\\TrackEditor.cs",
+              "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\Editor\\TrackEditor.cs",
+              "RelativeToolTip": "Assets\\Codebehind\\Editor\\TrackEditor.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T20:18:52.002Z"
+              "WhenOpened": "2025-03-06T19:41:35.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrackObject.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\TrackObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Codebehind\\HQ\\TrackObject.cs",
+              "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\TrackObject.cs",
+              "RelativeToolTip": "Assets\\Codebehind\\HQ\\TrackObject.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:40:40.247Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TrackModifier.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\TrackModifier.cs",
+              "RelativeDocumentMoniker": "Assets\\Codebehind\\HQ\\TrackModifier.cs",
+              "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\TrackModifier.cs",
+              "RelativeToolTip": "Assets\\Codebehind\\HQ\\TrackModifier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:40:18.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Codebehind\\HQ\\PlayerController.cs",
               "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Codebehind\\HQ\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAFwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T04:44:11.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Quad.cs",
-              "DocumentMoniker": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\Quad.cs",
-              "RelativeDocumentMoniker": "Assets\\Codebehind\\HQ\\Quad.cs",
-              "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\Quad.cs",
-              "RelativeToolTip": "Assets\\Codebehind\\HQ\\Quad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T04:47:28.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Line.cs",
-              "DocumentMoniker": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\Line.cs",
-              "RelativeDocumentMoniker": "Assets\\Codebehind\\HQ\\Line.cs",
-              "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\Line.cs",
-              "RelativeToolTip": "Assets\\Codebehind\\HQ\\Line.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T04:43:47.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RenderWindow.cs",
-              "DocumentMoniker": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\RenderWindow.cs",
-              "RelativeDocumentMoniker": "Assets\\Codebehind\\HQ\\RenderWindow.cs",
-              "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\RenderWindow.cs",
-              "RelativeToolTip": "Assets\\Codebehind\\HQ\\RenderWindow.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAD8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T04:47:30.949Z",
               "EditorCaption": ""
             },
             {
@@ -106,9 +96,22 @@
               "RelativeDocumentMoniker": "Assets\\Codebehind\\HQ\\HqRenderer.cs",
               "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\HqRenderer.cs",
               "RelativeToolTip": "Assets\\Codebehind\\HQ\\HqRenderer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkBAAASAAAAAAAAAA==",
+              "ViewState": "AgIAALAAAAAAAAAAAAAAALkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T00:05:53.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RenderWindow.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\RenderWindow.cs",
+              "RelativeDocumentMoniker": "Assets\\Codebehind\\HQ\\RenderWindow.cs",
+              "ToolTip": "C:\\Users\\alyss\\Unity Projects\\TurboTrack2D\\Assets\\Codebehind\\HQ\\RenderWindow.cs",
+              "RelativeToolTip": "Assets\\Codebehind\\HQ\\RenderWindow.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAD8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T04:47:30.949Z",
               "EditorCaption": ""
             }
           ]

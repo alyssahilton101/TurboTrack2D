@@ -19,8 +19,8 @@ public class HqRenderer : MonoBehaviour
 
     public TrackObject track;
 
-    public Material grass1;
-    public Material grass2;
+    [SerializeField] Material grass1;
+    [SerializeField] Material grass2;
     public Material rumble1;
     public Material rumble2;
     public Material road1;
@@ -106,18 +106,20 @@ public class HqRenderer : MonoBehaviour
     {
       
         car = new Rect(-2f, -7.5f, 4, 2.5f);
+        Vector3 test = Camera.main.WorldToScreenPoint(new Vector3(car.x, car.y + 2.5f, 0));
+        Debug.Log(test);
 
         // Get the object's position and scale
-        Vector3 position = carObject.transform.position;
-        Vector3 scale = carObject.transform.lossyScale; // Global scale
+        //Vector3 position = carObject.transform.position;
+        //Vector3 scale = carObject.transform.lossyScale; // Global scale
 
         // Assuming pivot is center, adjust to bottom-left origin
-        float width = scale.x;
-        float height = scale.y;
-        float x = position.x - width / 2;
-        float y = position.y - height / 2;
+        // float width = scale.x;
+        // float height = scale.y;
+        //float x = position.x - width / 2;
+        // float y = position.y - height / 2;
 
-        
+
 
 
         Renderer = new RenderWindow();
@@ -174,10 +176,20 @@ public class HqRenderer : MonoBehaviour
 
         destX += destW * Mathf.Sign(line.spriteX) / 2; //offsetX
         destY += destH * (-1);    //offsetY
-        
+
 
         //My changes to try and detect collision
         ////////////////////////////////////////////
+        if ((line.spriteX - 0.25 <= playerX && line.spriteX + 0.25 >= playerX) && line.Y == 0) {
+
+            Debug.Log("Collision?");
+            onColision.Invoke();
+
+            //track.lines[playerPos].y
+            //
+        }
+
+
         Vector3 screenPos = new Vector3(destX, destY, targetCamera.nearClipPlane);
         Vector3 worldPos = targetCamera.ScreenToWorldPoint(screenPos);
         Rect worldRect = new Rect(worldPos.x - 5, worldPos.y, 1, 1);

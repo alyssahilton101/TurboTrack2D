@@ -14,10 +14,16 @@ namespace HQ
         [SerializeField] int maxSpeed;
         [SerializeField] int offRoadDebuff;
         [SerializeField] int accerlationRate;
+        [SerializeField] float handling;
+        [SerializeField] bool isSlippery;
+        [SerializeField] float slipRate;
+
+        bool waslastGoingRight;
 
         private void Start()
         {
             isPaused = false;
+            waslastGoingRight = false;
         }
 
         private void FixedUpdate()
@@ -76,8 +82,14 @@ namespace HQ
                     }
 
                     //Left and Right controls
-                    if (Input.GetKey(KeyCode.RightArrow)) body.playerX += 0.1f;
-                    if (Input.GetKey(KeyCode.LeftArrow)) body.playerX -= 0.1f;
+                    if (Input.GetKey(KeyCode.RightArrow)) {
+                        body.playerX += handling;
+                        waslastGoingRight = true;
+                    }
+                    if (Input.GetKey(KeyCode.LeftArrow)) {
+                        body.playerX -= handling;
+                        waslastGoingRight = false;
+                    }
                     //If off road, apply speed penalty 
                     if (body.playerX > 1 || body.playerX < -1) {
                         if (body.speed >= 100)
@@ -87,6 +99,13 @@ namespace HQ
                         else if (body.speed <= -100) { body.speed += offRoadDebuff; }
                         
                     }
+                    //If slippery
+                    if (isSlippery && (!Input.GetKey(KeyCode.RightArrow) || !Input.GetKey(KeyCode.LeftArrow))) {
+
+                        if (waslastGoingRight) body.playerX += slipRate;
+                        else { body.playerX -= slipRate; }
+                    }
+                   
 
                 }
 
