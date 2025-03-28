@@ -1117,6 +1117,7 @@ MonoBehaviour:
   - Snowy
   - Forest
   - City
+  - Demo
   onTrackUpdate:
     m_PersistentCalls:
       m_Calls:

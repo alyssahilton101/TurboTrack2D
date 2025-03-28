@@ -36,7 +36,6 @@ namespace HQ
             hitCheckpoint2 = false;
             currentLap = 0;
             checkPoint1 = track.Length / 3;
-           // checkPoint1 = 300;
             checkPoint2 = 1000;
         }
 
@@ -71,8 +70,6 @@ namespace HQ
         //Increments current lap by 1 if all checkpoints were hit
         //This ensures you cannot go backwards to get another lap
         void CheckLapComplete() {
-
-
             if (trip < 0 || trip > track.Length * track.segmentLength)
             {
                 //Check to see if player hit checkpoints
@@ -103,22 +100,18 @@ namespace HQ
             //If we didn't hit the checkpoint before with our trip but have now, set to true
             if (trip - speed < checkPoint1 && trip >= checkPoint1) { 
                 hitCheckpoint1 = true;
-                Debug.Log("Hit Checkpoint 1");
             }
             if (trip - speed < checkPoint2 && trip >= checkPoint2)
             {
                 hitCheckpoint2 = true;
-                Debug.Log("Hit Checkpoint 2");
             }
             if (trip - speed >= checkPoint1 && trip < checkPoint1)
             {
                 hitCheckpoint1 = false;
-                Debug.Log("Unhit Checkpoint 1");
             }
             if (trip - speed >= checkPoint2 && trip < checkPoint2)
             {
                 hitCheckpoint2 = false;
-                Debug.Log("Unhit Checkpoint 2");
             }
 
         }

@@ -183,7 +183,6 @@ public class HqRenderer : MonoBehaviour
             else onColision.Invoke();
 
         }
-
         ///////////////////////////////////////////////
 
 
