@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     
+    //Setting up vairables 
     [SerializeField] string[] trackList;
     int currentTrack;
     string currentTrackName;
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Texture2D noPreviewPicture;
     public int currentLap;
 
-    // On awake, ensure there is only one instance of GameMangaer
+   
     private void Awake()
     {
         //Set Current track/name
@@ -62,9 +63,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(currentTrackName);
     }
 
+    //Pulls track data for the next track in the list
     public void NextTrack() {
-
-        
         //If not the last track in the list, return next
         if (currentTrack < trackList.Length - 1) {
             rightButton.SetActive(true);
@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
 
     }
 
+    //Grabs data for previous track in the list
     public void PreviousTrack() {
         //If not the last track in the list, return next
         if (currentTrack > 0)

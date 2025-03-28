@@ -28,26 +28,28 @@ public class UIManager : MonoBehaviour
     {
         
     }
+
+    //Updates the currently shown track
     public void UpdateCurrentTrack(string trackName) { 
     
         trackNameText.text = trackName;
         currentTrackPreview.GetComponent<RawImage>().texture = gameManager.trackPreviewDic[trackName]; 
     }
 
+   //Update speed UI
     public void UpdateSpeed(int speed) { 
         string speedString = speed.ToString();
         speedText.text = speedString + " m/h"; 
     }
+
+    //Update lap UI
     public void UpdateLap() {
         currentLap += 1;
         lapText.text = "Lap: " + currentLap.ToString();
     }
-    public void GameOverUI() { 
-        gameOverUI.SetActive(true);
-    }
 
-    public void GameOver()
-    {
+    //Activate gameover UI
+    public void GameOverUI() { 
         gameOverUI.SetActive(true);
     }
 
